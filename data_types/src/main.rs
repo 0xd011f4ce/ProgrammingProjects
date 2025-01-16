@@ -74,4 +74,45 @@ fn main()
 
 		// Characters
 		let first_initial: char = 'S';
+
+		// Arrays
+		let numbers: [i32; 6] = [1, 2, 3, 4, 5, 6];
+
+		let apples = ["Granny Smith", "McIntosh", "Red Delicious"];
+		println! ("The length of the apples array is: {}", apples.len ());
+
+		let seasons = ["Spring", "Summer", "Fall", "Winter"];
+		let first = seasons [0];
+		let second = seasons [1];
+
+		println! ("The first season is {} and the second season is {}", first, second);
+
+		println! ("The seasons are: {:?}", seasons);
+
+		dbg! (2 + 2);
+
+		// Tuples
+		let employee = ("Molly", 32, "Marketing");
+
+		// let name = employee.0;
+		// let age = employee.1;
+		// let department = employee.2;
+
+		let (name, age, department) = employee;
+
+		println! ("Employee: {employee:#?}");
+
+		// Range
+		let month_days = 1..31; // range from 1 to 30 (because it's exclusive)
+		let month_days = 1..=31; // this one includes the 31
+
+		for day in month_days
+		{
+			println! ("{}", day);
+		}
+
+		let letters = 'b'..'f';
+
+		// Generics
+		let month_days: std::ops::Range<i32> = 1..=31;
 }
