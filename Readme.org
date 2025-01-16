@@ -1,0 +1,10 @@
+* RustProjects
+
+So... I decided to start learning rust, so here are all the projects
+that I've made while learning this language.
+
+Here's a list with all the projects:
+
+- [[file:hello_world/][Hello World]]
+- [[file:variables_and_mutability/][Variables]]
+- [[file:data_types/][Data Types]]
