@@ -1,118 +1,21 @@
 #![allow (unused_variables)]
 
-fn main()
+fn main ()
 {
-		// Integers
-		let eight_bit: i8 = 112;
-		let sixteen_bit: i16 = -32500;
-		let thirty_two_bit: i32 = 2147483646;
-		let some_value = 20i8; // treat it as an i8
-		let another_value: i32 = 1_428_720;
-		let days: usize = 55;
+		let leet_variable: i32 = 1_337;
+		let another_variable = leet_variable as i16;
+		let float_variable: f64 = 100.238940;
 
-		// Strings
-		println! ("Dear Milena\nI am Kafka.");
-		let raw_string = r"C:\My Documents\new\videos";
-		println! ("{raw_string}");
+		println! ("{:.3}", float_variable);
 
-		// Methods
-		let value:i32 = -15;
-		println! ("{}", value.abs ());
-		println! ("{}", value.pow (2));
+		let with_milk: bool = true;
+		let with_sugar: bool = true;
+		let is_my_type_of_coffe: bool = with_milk && with_sugar;
+		let is_acceptable_coffe: bool = with_milk || with_sugar;
 
-		let empty_space:&str = "								my content									";
-		println! ("{}", empty_space.trim ());
+		let my_arr: [i8; 4] = [ 1, 2, 3, 4 ];
+		println! ("{:#?}", my_arr);
 
-		// Floats
-		let pi:f64 = 3.14159;
-		println! ("{}", pi.floor ());
-		println! ("{}", pi.ceil ());
-		println! ("{}", pi.round ());
-		println! ("I am using format specifies: {:.2}", pi);
-
-		// Casting
-		let miles_away:i32 = 50;
-		let miles_away_i8 = miles_away as i8;
-
-		let miles_away = 100.329032;
-		let miles_away_int = miles_away as i32;
-		println! ("{miles_away_int}");
-
-		// Math operations
-		let addition = 5 + 4;
-		let subtraction = 10 - 6;
-		let multiplication = 3 * 4;
-		let division = 5.0 / 3.0;
-		let modulus = 7 % 2;
-
-		println! ("\nAddition: {addition}\nSubtraction: {subtraction}\nMultiplication: {multiplication}\nDivision: {division}\nModulus: {modulus}");
-
-		// Augmented assignment
-		let mut year = 2024;
-		year += 1;
-
-		println! ("The new year is: {year}");
-
-		// Booleans
-		let is_handsome: bool = true;
-		let is_silly: bool = false;
-
-		println! ("{}", !true); // negation
-		println! ("{}", 2 == 2); // equality
-		println! ("{}", 1 != 2); // inequality
-		println! ("{}", 13 == 13.0 as i32); // casting
-
-		let purchased_ticket = true;
-		let plane_on_time = true;
-		let making_event = purchased_ticket && plane_on_time;
-		println! ("It is {} that I will arrive as expected", making_event);
-
-		let user_has_paid_for_subscription = false;
-		let user_is_admin = true;
-		let user_can_see_premium_experience = user_has_paid_for_subscription || user_is_admin;
-		println! ("Can this user see my site? {user_can_see_premium_experience}");
-
-		// Characters
-		let first_initial: char = 'S';
-
-		// Arrays
-		let numbers: [i32; 6] = [1, 2, 3, 4, 5, 6];
-
-		let apples = ["Granny Smith", "McIntosh", "Red Delicious"];
-		println! ("The length of the apples array is: {}", apples.len ());
-
-		let seasons = ["Spring", "Summer", "Fall", "Winter"];
-		let first = seasons [0];
-		let second = seasons [1];
-
-		println! ("The first season is {} and the second season is {}", first, second);
-
-		println! ("The seasons are: {:?}", seasons);
-
-		dbg! (2 + 2);
-
-		// Tuples
-		let employee = ("Molly", 32, "Marketing");
-
-		// let name = employee.0;
-		// let age = employee.1;
-		// let department = employee.2;
-
-		let (name, age, department) = employee;
-
-		println! ("Employee: {employee:#?}");
-
-		// Range
-		let month_days = 1..31; // range from 1 to 30 (because it's exclusive)
-		let month_days = 1..=31; // this one includes the 31
-
-		for day in month_days
-		{
-			println! ("{}", day);
-		}
-
-		let letters = 'b'..'f';
-
-		// Generics
-		let month_days: std::ops::Range<i32> = 1..=31;
+		let my_tuple = ( 10, 3.14159, true, my_arr );
+		println! ("{:#?}", my_tuple);
 }
