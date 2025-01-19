@@ -14,3 +14,4 @@ Here's a list with all the projects:
 - [[file:references_and_borrowing/][References and Borrowing]]
 - [[file:slices/][Slices]]
 - [[file:structs/][Structs]]
+- [[file:enums/][Enums]]
