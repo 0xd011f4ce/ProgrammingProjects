@@ -16,3 +16,4 @@ Here's a list with all the projects:
 - [[file:structs/][Structs]]
 - [[file:enums/][Enums]]
 - [[file:generics/][Generics]]
+- [[file:option_and_result/][The option and result Enum]]
