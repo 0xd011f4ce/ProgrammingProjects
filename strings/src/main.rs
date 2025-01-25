@@ -1,23 +1,55 @@
-fn main() {
-		// &str
-		let pirate: &str = "Bloodhook";
+use std::io;
 
-		// String
-		let sailer: String = String::from (pirate);
-		let bad_guy: String = pirate.to_string ();
+fn make_money (string: &mut String) -> &mut String
+{
+		string.push_str ("$$$");
+		string
+}
 
-		println! ("{pirate} and {sailer} and {bad_guy}");
+fn trim_and_capitalize (string: &str) -> String
+{
+		let new_string: String = string.trim ().to_uppercase ();
+		new_string
+}
 
-		let first_initial = &sailer [0..1];
-		println! ("{first_initial}");
+fn elements (string: &str) -> Vec<&str>
+{
+		let splitten: Vec<&str> = string.split ("!").collect ();
+		splitten
+}
 
-		let mut full_name = String::from ("Sylvester");
-		let last_name = String::from ("Stallone");
-		full_name.push (' ');
-		full_name.push_str (&last_name); // & converts a String to a &str
-		println! ("{full_name}");
+fn get_identity () -> String
+{
+		let mut result = String::new ();
+		let stdin = io::stdin ();
 
-		let first_name = String::from ("Linda");
-		let full_name = first_name + &last_name;
-		println! ("{}", full_name); // ownership is moved
+		println! ("Please enter your first name: ");
+		let mut first_name = String::new ();
+		stdin.read_line (&mut first_name).expect ("Failed to read your first name :c");
+
+		println! ("Please enter your last name: ");
+		let mut last_name = String::new ();
+		stdin.read_line (&mut last_name).expect ("Failed to read your last name :c");
+
+		result = format! ("{} {}", first_name.trim (), last_name.trim ());
+
+		result
+}
+
+fn main ()
+{
+		let mut my_string = String::from ("were so gangsta");
+		make_money (&mut my_string);
+
+		let capitalize = trim_and_capitalize ("Capitalize thissss");
+
+		let precious_rocks = "Gold!Silver!Platinum";
+		let splitten_rocks = elements (precious_rocks);
+
+		let name = get_identity ();
+
+		println! ("{}", my_string);
+		println! ("{}", capitalize);
+		println! ("{:#?}", splitten_rocks);
+		println! ("{}", name);
 }

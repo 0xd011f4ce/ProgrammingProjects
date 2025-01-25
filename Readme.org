@@ -19,3 +19,4 @@ Here's a list with all the projects:
 - [[file:option_and_result/][The option and result Enum]]
 - [[file:vectors/][Vectors]]
 - [[file:warehouse/][Project structure]] ([[file:warehouse_project/][Challenge]])
+- [[file:strings/][Strings]]
