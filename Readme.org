@@ -20,3 +20,4 @@ Here's a list with all the projects:
 - [[file:vectors/][Vectors]]
 - [[file:warehouse/][Project structure]] ([[file:warehouse_project/][Challenge]])
 - [[file:strings/][Strings]]
+- [[file:hashmaps/][Hashmaps]]
