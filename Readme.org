@@ -1,23 +1,6 @@
-* RustProjects
+* Programming Projects
 
-So... I decided to start learning rust, so here are all the projects
-that I've made while learning this language.
+These are the projects that I code while learning some programming languages.
 
-Here's a list with all the projects:
-
-- [[file:hello_world/][Hello World]]
-- [[file:variables_and_mutability/][Variables]]
-- [[file:data_types/][Data Types]]
-- [[file:functions/][Functions]]
-- [[file:control_flow/][Control Flow]]
-- [[file:ownership/][Ownership]]
-- [[file:references_and_borrowing/][References and Borrowing]]
-- [[file:slices/][Slices]]
-- [[file:structs/][Structs]]
-- [[file:enums/][Enums]]
-- [[file:generics/][Generics]]
-- [[file:option_and_result/][The option and result Enum]]
-- [[file:vectors/][Vectors]]
-- [[file:warehouse/][Project structure]] ([[file:warehouse_project/][Challenge]])
-- [[file:strings/][Strings]]
-- [[file:hashmaps/][Hashmaps]]
+- [[file:Rust/][Rust]] (Abandoned)
+- [[file:C/][C]]
