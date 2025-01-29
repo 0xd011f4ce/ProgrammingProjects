@@ -8,3 +8,5 @@ I do while in my C re-learning journey:
 - [[file:src/variables1.c][Variables 1]]
 - [[file:src/variables2.c][Variables 2]]
 - [[file:src/variables3.c][Variables 3]]
+- [[file:src/variables4.c][Variables 4]]
+- [[file:src/variables5.c][Variables 5]]
