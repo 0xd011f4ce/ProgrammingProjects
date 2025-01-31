@@ -19,3 +19,8 @@ I do while in my C re-learning journey:
 - [[file:src/variables_exercise3.c][Exercise 3]]
 
 ** Control Flow
+
+- [[file:src/control_flow1.c][Control Flow 1]]
+- [[file:src/control_flow2.c][Control Flow 2]]
+- [[file:src/control_flow3.c][Control Flow 3]]
+- [[file:src/control_flow4.c][Control Flow 4]]
