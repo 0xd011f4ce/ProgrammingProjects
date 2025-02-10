@@ -1,4 +1,4 @@
-pp* C Projects
+* C Projects
 
 I already know C, but I feel I am not good enough, so I will start learning it
 from scratch (I'll literally start from scratch xd). These are the projects that
@@ -24,3 +24,7 @@ I do while in my C re-learning journey:
 - [[file:src/control_flow2.c][Control Flow 2]]
 - [[file:src/control_flow3.c][Control Flow 3]]
 - [[file:src/control_flow4.c][Control Flow 4]]
+
+** Pointers
+
+- [[file:src/pointers1.c][Pointers 1]]
