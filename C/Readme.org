@@ -28,3 +28,4 @@ I do while in my C re-learning journey:
 ** Pointers
 
 - [[file:src/pointers1.c][Pointers 1]]
+- [[file:src/pointers_project.c][Pointers 2]]
